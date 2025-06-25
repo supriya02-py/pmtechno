@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | PM Techno Private Ltd</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="PM Techno Logo"></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="facility.html">Facility</a></li>
+        <li><a href="career.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+   
+<section id="contact" class="contact section-padding">
+    <div class="container">
+        <div class="section-title" style="text-align:center;">
+            <h2 style="color:#e21921; font-size:2rem; margin-bottom:10px;">Contact Us</h2>
+            <p style="margin-bottom:32px;">Get in touch with our team for inquiries, support, or partnership opportunities.</p>
+        </div>
+        <div class="contact-attractive-flex">
+            <div class="contact-info-block fancy-block">
+                <h2>Reach out to us at</h2>
+                <p>Looking forward to hearing from you</p>
+                <h3>LinkedIn</h3>
+                <a href="https://www.linkedin.com/company/pm-techno-india-pvt-ltd/" target="_blank">
+                    https://www.linkedin.com/company/pm-techno-india-pvt-ltd
+                </a>
+                <h3 style="margin-top: 24px;">Email</h3>
+                <a href="mailto:enquiries@pmtechno.ia">enquiries@pmtechno.ia</a>
+            </div>
+            <div class="location-block fancy-block">
+            <div class="location-header">
+                <span class="location-icon">📍</span>
+                <div class="location-title">Our Location</div></div>
+                <div class="map-iframe-wrapper">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d7766.652211085522!2d77.5523274906928!3d13.267550248302602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x3bb1dfd8d9154139%3A0x9801f7815c448022!2sDITPL%2C%20KIADB%20Apparel%20Park%2FSriram%20innovation%2C%20Arehalli%20Guddadahalli%2C%20Karnataka!3m2!1d13.264824899999999!2d77.5603132!4m5!1s0x3bb1dfd04790aa8d%3A0xcd5b1f81923715c7!2sAparel%20Park%2C%20Arehalli%20Guddadahalli%2C%20Karnataka%20561203!3m2!1d13.272679!2d77.551909!5e0!3m2!1sen!2sin!4v1750758662595!5m2!1sen!2sin"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            </div>
+            </div>
+            </section>
+
+
+        <!-- Footer Section -->
+   <footer class="footer">
+        <div class="footer-bottom" style="text-align: center; padding: 16px 0; color: #888; font-size: 0.98rem;">
+            &copy; 2025 PM Techno. All rights reserved.
+        </div>
+    </footer>
+    
+
+    <!-- JavaScript -->
+    <script>
+        // Responsive menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+        menuToggle.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('active');
+            } else {
+                backToTop.classList.remove('active');
+            }
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
