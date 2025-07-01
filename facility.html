@@ -14,6 +14,7 @@
                 <a href="index.html" class="logo-link">
                 <img src="images/logo.png" alt="PM Techno Logo"></a>
             </div>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
             <nav class="main-nav" id="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -32,7 +33,7 @@
         <div class="container">
             <div class="section-title" style="text-align:center; margin-bottom: 50px;">
                 <h2 style="color:#e21921; font-size:2rem; margin-bottom:10px;">Our Facilities</h2>
-                <p>Discover our state-of-the-art automotive facility, equipped with the latest tools and technology to ensure top-quality service, maintenance, and care for your vehicle.</p>
+                <p>Discover our state-of-the-art facilities, equipped with the latest tools and technology to ensure top-quality and manufacturing supplies</p>
             </div>
             <div class="facility-filters" style="text-align:center; margin-bottom:30px;">
                 <button class="facility-btn active" data-category="automotive">Automotive</button>
@@ -62,11 +63,11 @@
         <img src="images/autopp.avif" alt="Power Press" class="facility-img">
     </div>
     <div class="facility-row">
-        <img src="images/autoqp.avif" alt="Area" class="facility-img">
+        <img src="images/CMM.avif" alt="Area" class="facility-img">
         <div>
             <h3>Quality Control:</h3>
             <p>
-                The automotive quality control section uses advanced equipment like vernier calipers, micrometers, dial gauges, surface finish testers, and hardness testers to ensure all manufactured parts meet safety and industry standards. Each part undergoes multiple inspection checkpoints, including dimensional accuracy and mechanical strength tests. A Pre-Delivery Inspection (PDI) setup is used to simulate real-world performance before shipping to clients.
+                The automotive quality control section uses advanced equipment like coordinate measuring machines (CMM), vernier calipers, micrometers, dial gauges, surface finish testers, and hardness testers to ensure all manufactured parts meet safety and industry standards. Each part undergoes multiple inspection checkpoints, including dimensional accuracy and mechanical strength tests. A Pre-Delivery Inspection (PDI) setup is used to simulate real-world performance before shipping to clients.
             </p>
         </div>
     </div>
@@ -78,7 +79,7 @@
 <div class="facility-group" data-category="industrial" style="display:none;">
     <section class="animated-section">
     <div class="facility-row">
-        <img src="images/indAr.avif" alt="Injection Molding" class="facility-img">
+        <img src="images/ind_area.avif" alt="Injection Molding" class="facility-img">
         <div>
             <h3>Area:</h3>
             <p>The industrial manufacturing division spans over 50,000 sq. ft., structured to handle bulk production of heavy-duty components and industrial-grade machinery parts. The facility layout includes zones for raw material storage, metal forming, welding, surface treatment, and finished goods inventory. It is optimized for large-scale fabrication projects and high-load equipment handling</p>
@@ -86,15 +87,17 @@
     </div>
     <div class="facility-row">
         <div>
-            <h3>Power Press:</h3>
-            <p>Our industrial facility hosts heavy-duty power presses capable of working with thicker gauge materials. The press line here supports operations such as deep drawing, blanking, and forming of large-scale components used in industrial machines, agriculture tools, and construction equipment. These presses are engineered for high-pressure, precision output with consistent cycle times. </p>
+            <h3>Powder Coating:</h3>
+            <p>We provide advanced powder coating solutions tailored for industrial applications. This finishing process involves applying a dry powder to metal surfaces using an electrostatic method, followed by heat curing to form a durable, uniform coating.
+
+Our powder coating enhances the longevity, corrosion resistance, and surface strength of industrial components such as machinery frames, control panels, enclosures, brackets, and structural parts. It offers superior protection against harsh environmental conditions, chemical exposure, and mechanical wear—making it ideal for heavy-duty industrial use. </p>
         </div>
-        <img src="images/powp.avif" alt="Industrial Machine" class="facility-img">
+        <img src="images/Engioneering-Plant-Powder-Coating-Area.avif" alt="Industrial Machine" class="facility-img">
     </div>
     <div class="facility-row">
-        <img src="images/quac.avif" alt="Injection Molding" class="facility-img">
+        <img src="images/laser_cutting.avif" alt="Injection Molding" class="facility-img">
         <div>
-            <h3>Quality Control:</h3>
+            <h3>Laser Cutting:</h3>
             <p>Quality control in the industrial unit focuses on strength, tolerance, and durability. Equipment such as tensile testers, hardness testers, weld integrity checkers, and alignment fixtures are used to inspect each part. Strict quality parameters ensure each industrial product can endure heavy usage, vibration, and stress. Documentation and batch-wise inspection reports are maintained for traceability and compliance</p>
         </div>
     </div>
@@ -116,12 +119,12 @@
             <h3>Vertical Machining Centres</h3>
             <p>Vertical Machining Centres play a vital role in the precision manufacturing of automotive components. These advanced machines are designed for high-speed, accurate operations, allowing us to produce complex parts with tight tolerances and exceptional consistency. By utilizing Vertical Machining Centres, we ensure efficient production processes, reduced lead times, and high-quality output that meets the rigorous standards of the automotive industry. Their reliability and performance contribute significantly to maintaining the excellence of our products.</p>
         </div>
-        <img src="images/Tool-Room.avif" alt="Tool Room 2" class="facility-img">
+        <img src="images/vmc.avif" alt="Tool Room 2" class="facility-img">
     </div>
     <div class="facility-row">
-        <img src="images/CMM.avif" alt="Tool Room" class="facility-img">
+        <img src="images/Wire-EDM-Cutting.avif" alt="Tool Room" class="facility-img">
         <div>
-            <h3>Co-ordinate Measuring Machine</h3>
+            <h3>Wire Cutting EDM</h3>
             <p>Tool accuracy is vital, and our quality team uses profile projectors, tool presetters, gauge blocks, coordinate measuring machines (CMM), and surface roughness testers to verify every tool's precision. Tool trials are documented, and adjustments are made until zero deviation is achieved. Regular maintenance logs and inspection certificates ensure long-term reliability.</p>
         </div>
     </div>
@@ -142,13 +145,6 @@
 
     <!-- JavaScript -->
         <script>
-        // Responsive menu toggle
-        const menuToggle = document.getElementById('menu-toggle');
-        const mainNav = document.getElementById('main-nav');
-        menuToggle && menuToggle.addEventListener('click', () => {
-            mainNav.classList.toggle('active');
-        });
-
         // Back to top button
         const backToTop = document.getElementById('backToTop');
         if (backToTop) {

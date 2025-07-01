@@ -3,13 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Products | PM Techno Private Ltd</title>
+    <title>Careers | PM Techno Private Ltd</title>
     <link rel="stylesheet" href="css/styles.css">
     <style>
+        html, body {
+            height: 100%;
+            min-height: 100%;
+        }
         body {
             font-family: 'Poppins', Arial, sans-serif;
             background: #f4f4f4;
             margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .main-content {
+            flex: 1 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
         }
         .job-search-section {
             padding: 20px;
@@ -73,8 +86,6 @@
             padding: 16px;
             border-top: 1px solid #ddd;
         }
-
-
         .job-description strong {
             display: block;
             margin-bottom: 8px;
@@ -85,8 +96,6 @@
         .other-page {
             background-color: #f4f4f4;
         }
-        
-
         @media (max-width: 600px) {
             .search-container {
                 flex-direction: column;
@@ -99,8 +108,7 @@
                 width: 100%;
             }
         }
-
-         @media (max-width: 768px) {
+        @media (max-width: 768px) {
             .job-list-table th, .job-list-table td {
                 font-size: 14px;
                 padding: 8px;
@@ -109,7 +117,6 @@
                 width: 100%;
             }
         }
-
         @media (max-width: 480px) {
             .search-container {
                 flex-direction: column;
@@ -123,7 +130,7 @@
                 margin-bottom: 0;
             }
         }
-         </style>
+    </style>
 </head>
 <body class="other-page">
     <header id="header">
@@ -132,133 +139,95 @@
                 <a href="index.html" class="logo-link">
                 <img src="images/logo.png" alt="PM Techno Logo"></a>
             </div>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
             <nav class="main-nav" id="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="facility.html">Facility</a></li>
-        <li><a href="career.html">Careers</a></li>
-        <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="facility.html">Facility</a></li>
+                    <li><a href="career.html">Careers</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-            </div>
             </nav>
         </div>
     </header>
-    <!-- After nav tag -->
-<section class="job-search-section">
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="Search by keyword and/or location" class="search-input">
-        <button id="searchButton" class="search-button">Search</button>
-        <a href="#" id="clearButton" class="clear-link">Clear</a>
+    <div class="main-content">
+        <section class="job-search-section">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search by keyword and/or location" class="search-input">
+                <button id="searchButton" class="search-button">Search</button>
+                <a href="#" id="clearButton" class="clear-link">Clear</a>
+            </div>
+        </section>
+        <section class="job-list-section">
+            <table class="job-list-table">
+                <thead>
+                    <tr>
+                        <th>Job ID</th>
+                        <th>Job Title</th>
+                        <th>Location</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="job-row" onclick="toggleDescription(this)">
+                        <td>1024/25</td>
+                        <td>Manager - TAX - National - TAX - PAS - Mobility Core - Mumbai</td>
+                        <td>Mumbai, MH, IN, 400028</td>
+                        <td><a href="https://www.linkedin.com/company/pm-techno-india-pvt-ltd" class="apply-button">Apply</a></td>
+                    </tr>
+                    <tr class="job-description">
+                        <td colspan="4">
+                        <strong>Eligibility Criteria :</strong>
+                            <br>Graduate in Mechanical / Automobile / Industrial Engineering
+                            <br><br><strong>Experience : </strong>8 - 15 Years
+                            <br><br><strong>Technical : </strong>Hands on experience in CNC Machining ( Turning, VMC, HMC,Grinding, Gear etc..), right selection of Machines, Tools & Fixtures for process Optimization ,Measurement knowledge including CMM ,GD&T, Gauge concepts, Quality Tools , APQP , PPAP etc. Knowledge of Automotive or Aerospace manufacturing commodity with Part proving capability will be an added advantage.
+                            <br><br><strong>Additional Qualification : </strong>Computer Literate, Excellent verbal Communication, presentation & interpersonal/facilitation skill.
+                            <br><br><strong>Core Competencies : </strong>Self Driven, Team approach with customer focus support, Creative .
+                            <br><br><strong>Application window : </strong>Open from 6th July’24
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </div>
-</section>
-    <section class="job-search-section">
-        <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search by keyword and/or location" class="search-input">
-            <button id="searchButton" class="search-button">Search</button>
-            <a href="#" id="clearButton" class="clear-link">Clear</a>
-        </div>
-    </section>
-    <section class="job-list-section">
-        <table class="job-list-table">
-            <thead>
-                <tr>
-                    <th>Job ID</th>
-                    <th>Job Title</th>
-                    <th>Location</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="job-row" onclick="toggleDescription(this)">
-                    <td>1024/25</td>
-                    <td>Manager - TAX - National - TAX - PAS - Mobility Core - Mumbai</td>
-                    <td>Mumbai, MH, IN, 400028</td>
-                    <td><a href="https://www.linkedin.com/company/pragvera/jobs/" class="apply-button">Apply</a></td>
-                    <td colspan="4"></td>
-                </tr>
-                <tr class="job-description">
-                    <td colspan="4">
-                    <strong>Eligibility Criteria :</strong>
-                        <br>Graduate in Mechanical / Automobile / Industrial Engineering
-                        <br><br><strong>Experience : </strong>8 - 15 Years
-                        <br><br><strong>Technical : </strong>Hands on experience in CNC Machining ( Turning, VMC, HMC,Grinding, Gear etc..), right selection of Machines, Tools & Fixtures for process Optimization ,Measurement knowledge including CMM ,GD&T, Gauge concepts, Quality Tools , APQP , PPAP etc. Knowledge of Automotive or Aerospace manufacturing commodity with Part proving capability will be an added advantage.
-                        <br><br><strong>Additional Qualification : </strong>Computer Literate, Excellent verbal Communication, presentation & interpersonal/facilitation skill.
-                        <br><br><strong>Core Competencies : </strong>Self Driven, Team approach with customer focus support, Creative .
-                        <br><br><strong>Application window : </strong>Open from 6th July’24
-                    </td>
-                </tr>
-                <tr>
-                    <td>1024/25</td>
-                    <td>PAS EMS - Newzealand - Tax Senior</td>
-                    <td>Bengaluru, KA, IN, 560016</td>
-                    <td><a href="https://www.linkedin.com/company/pragvera/jobs/" class="apply-button">Apply</a></td>
-                </tr>
-                <tr>
-                    <td>1024/25</td>
-                    <td>Valuations and Business Modelling - Economic Advisory Executive - UAE 1</td>
-                    <td>Dubai, AE, 9267</td>
-                    <td><a href="https://www.linkedin.com/company/pragvera/jobs/" class="apply-button">Apply</a></td>
-                </tr>
-                <tr>
-                    <td>1024/25</td>
-                    <td>Senior Consultant - TAX - CHS - TAX - GCR - GLOBAL COMPLIANCE & REPORTING - Jaipur</td>
-                    <td>Jaipur, RJ, IN, 302018</td>
-                    <td><a href="https://www.linkedin.com/company/pragvera/jobs/" class="apply-button">Apply</a></td>
-                </tr>
-                <tr>
-                    <td>1024/25</td>
-                    <td>Analyst - TAX - TMT - TAX - Indirect Tax - Core - Hyderabad</td>
-                    <td>Hyderabad, IN, 500032</td>
-                    <td><a href="https://www.linkedin.com/company/pragvera/jobs/" class="apply-button">Apply</a></td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-<footer class="footer">
-       
+    <footer class="footer" style="flex-shrink:0;">
         <div class="footer-bottom" style="text-align: center; padding: 16px 0; color: #888; font-size: 0.98rem;">
             &copy; 2025 PM Techno. All rights reserved.
         </div>
     </footer>
 <script>
-    function toggleMenu() {
-        const navLinks = document.getElementById("navLinks");
-        if (navLinks.style.display === "block") {
-            navLinks.style.display = "none"; // Hide the menu
+    // Get references to the input field, search button, and clear button
+    const searchInput = document.getElementById('searchInput');
+    const searchButton = document.getElementById('searchButton');
+    const clearButton = document.getElementById('clearButton');
+
+    // Add event listener for the search button
+    searchButton.addEventListener('click', () => {
+        const query = searchInput.value.trim(); // Get the input value and trim whitespace
+        if (query) {
+            alert(`Searching for: ${query}`); // Replace this with actual search logic
+            // Example: Redirect to a search results page
+            // window.location.href = `/search?query=${encodeURIComponent(query)}`;
         } else {
-            navLinks.style.display = "block"; // Show the menu
+            alert('Please enter a keyword or location to search.');
+        }
+    });
+
+    function toggleDescription(row) {
+        const nextRow = row.nextElementSibling; // Get the next row (description row)
+        if (nextRow && nextRow.classList.contains('job-description')) {
+            // Toggle the display of the description row
+            nextRow.style.display = nextRow.style.display === 'table-row' ? 'none' : 'table-row';
         }
     }
-    // Get references to the input field, search button, and clear button
-const searchInput = document.getElementById('searchInput');
-const searchButton = document.getElementById('searchButton');
-const clearButton = document.getElementById('clearButton');
 
-// Add event listener for the search button
-searchButton.addEventListener('click', () => {
-    const query = searchInput.value.trim(); // Get the input value and trim whitespace
-    if (query) {
-        alert(`Searching for: ${query}`); // Replace this with actual search logic
-        // Example: Redirect to a search results page
-        // window.location.href = `/search?query=${encodeURIComponent(query)}`;
-    } else {
-        alert('Please enter a keyword or location to search.');
-    }
-});
-function toggleDescription(row) {
-    const nextRow = row.nextElementSibling; // Get the next row (description row)
-    if (nextRow && nextRow.classList.contains('job-description')) {
-        // Toggle the display of the description row
-        nextRow.style.display = nextRow.style.display === 'table-row' ? 'none' : 'table-row';
-    }
-}
-// Add event listener for the clear button
-clearButton.addEventListener('click', (e) => {
-    e.preventDefault(); // Prevent the default link behavior
-    searchInput.value = ''; // Clear the input field
-});
+    // Add event listener for the clear button
+    clearButton.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent the default link behavior
+        searchInput.value = ''; // Clear the input field
+    });
 </script>
-</body> 
+</body>
 </html>
