@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Facilities | PM Techno Private Ltd</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="PM Techno Logo"></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="company.html#md-section" class="dropbtn" id="aboutDropdownBtn">About<span style="font-size:0.8em;">▼</span></a>
+            <ul class="dropdown-content" id="aboutDropdownMenu">
+                <li>
+                    <a href="company.html">Company</a>
+                </li>
+                <li>
+                    <a href="history.html">History</a>
+                </li>
+                <li>
+                    <a href="awards.html">Awards</a>
+                </li>
+                <li>
+                    <a href="customers.html">Customers</a>
+                </li>
+            </ul>
+            </li>
+        <li class="dropdown">
+    <a href="#" class="dropbtn" id="aboutDropdownBtn">
+        Products <span class="chevron">&#x25BC;</span>
+    </a>
+    <ul class="dropdown-content" id="aboutDropdownMenu">
+        <li><a href="automotive.html">Automotive</a></li>
+        <li><a href="indust.html">Industrial Solutions</a></li>
+    </ul>
+</li>
+         <li class="dropdown">
+    <a href="#" class="dropbtn" id="aboutDropdownBtn">
+        Facility<span class="chevron">&#x25BC;</span>
+    </a>
+    <ul class="dropdown-content" id="aboutDropdownMenu">
+        <li><a href="auto_facility.html">Automotive</a></li>
+        <li><a href="indust_facility.html">Industrial</a></li>
+        <li><a href="tool_room.html">Tool Room</a></li>
+    </ul>
+</li>
+        <li><a href="career.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Industrial Facility Section -->
+<section id="industrial-facility" class="facility section-padding" style="margin-bottom: 50px;">
+    <div class="container">
+        <div class="section-title" style="text-align:center; margin-bottom: 50px;">
+            <h2 style="color:#e21921; font-size:2rem; margin-bottom:10px;">Industrial Facility</h2>
+            <p>Optimized for heavy-duty production, our industrial setup delivers precision fabrication and protective finishing.</p>
+        </div>
+        <section class="animated-section">
+            <div class="facility-row">
+                <img src="images/ind_area1.jpg" alt="Industrial Area" class="facility-img">
+                <div>
+                    <h3>Area:</h3>
+                    <p>
+                        The industrial manufacturing division spans over 100,000 sq. ft., structured to handle bulk production of heavy-duty components and industrial-grade machinery parts. The facility layout includes zones for raw material storage, metal forming, welding(robotics and manual), laser cutting, powder coating and finished goods inventory. It is optimized for large-scale fabrication projects and high-load equipment handling.
+                    </p>
+                </div>
+            </div>
+            <div class="facility-row">
+                <div>
+                    <h3>Powder Coating:</h3>
+                    <p>
+                        We provide advanced powder coating solutions tailored for industrial applications. This finishing process involves applying a dry powder to metal surfaces using an electrostatic method, followed by heat curing to form a durable, uniform coating.
+
+                        Our powder coating enhances the longevity, corrosion resistance, and surface strength of industrial components such as machinery frames, control panels, enclosures, brackets, and structural parts. It offers superior protection against harsh environmental conditions, chemical exposure, and mechanical wear—making it ideal for heavy-duty industrial use.
+                    </p>
+                </div>
+                <img src="images/Engioneering-Plant-Powder-Coating-Area.avif" alt="Powder Coating" class="facility-img">
+            </div>
+            <div class="facility-row">
+                <img src="images/laser_cutting.avif" alt="Laser Cutting" class="facility-img">
+                <div>
+                    <h3>Laser Cutting:</h3>
+                    <p>
+                        We offer precision laser cutting services designed to meet the demands of industrial manufacturing. Using advanced CNC-controlled laser technology, we can accurately cut complex shapes and patterns on a wide range of materials, including mild steel, stainless steel, and aluminum.
+
+                        Our laser cutting process ensures high accuracy, clean edges, and minimal material waste, making it ideal for producing components like machine panels, enclosures, brackets, and customized metal parts. Whether it's for prototyping or large-scale production, our solutions are tailored to deliver efficiency, consistency, and quality.
+                    </p>
+                </div>
+            </div>
+            <div class="facility-row">
+        <div>
+            <h3>Robotic Welding Cell:</h3>
+            <p>Equipped with KUKA's intelligent robotic arms, these cells ensure consistent, high-quality welds while significantly increasing productivity and safety. The system includes a robot, welding equipment, positioners, and a protective enclosure, all integrated for seamless operation. Ideal for applications in automotive, heavy machinery, and metal fabrication, KUKA welding cells reduce human error, minimize downtime, and are programmable for a variety of welding techniques such as MIG, MAG, or TIG. Their flexibility and reliability make them essential in modern manufacturing processes. </p>
+        </div>
+        <img src="images/robocell.jpeg" alt="Industrial Machine" class="facility-img">
+    </div>
+        </section>
+    </div>
+</section>
+
+    
+        <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-bottom" style="text-align: center; padding: 16px 0; color: #888; font-size: 0.98rem;">
+            &copy; 2025 PM Techno. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+        <script>
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('active');
+                } else {
+                    backToTop.classList.remove('active');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        // Product filter buttons
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const facilityGroups = document.querySelectorAll('.facility-group');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                const category = this.getAttribute('data-category');
+                facilityGroups.forEach(group => {
+                    if (group.getAttribute('data-category') === category) {
+                        group.style.display = '';
+                    } else {
+                        group.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const animatedEls = document.querySelectorAll('.animated-section, .product-card');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    animatedEls.forEach(el => observer.observe(el));
+});
+</script>
+</body>
+</html>
+

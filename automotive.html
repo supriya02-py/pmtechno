@@ -18,9 +18,42 @@
             <nav class="main-nav" id="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="facility.html">Facility</a></li>
+        <li class="dropdown">
+            <a href="company.html#md-section" class="dropbtn" id="aboutDropdownBtn">About<span style="font-size:0.8em;">▼</span></a>
+            <ul class="dropdown-content" id="aboutDropdownMenu">
+                <li>
+                    <a href="company.html">Company</a>
+                </li>
+                <li>
+                    <a href="history.html">History</a>
+                </li>
+                <li>
+                    <a href="awards.html">Awards</a>
+                </li>
+                <li>
+                    <a href="customers.html">Customers</a>
+                </li>
+            </ul>
+            </li>
+        <li class="dropdown">
+    <a href="#" class="dropbtn" id="aboutDropdownBtn">
+        Products <span class="chevron">&#x25BC;</span>
+    </a>
+    <ul class="dropdown-content" id="aboutDropdownMenu">
+        <li><a href="automotive.html">Automotive</a></li>
+        <li><a href="indust.html">Industrial Solutions</a></li>
+    </ul>
+</li>
+         <li class="dropdown">
+    <a href="#" class="dropbtn" id="aboutDropdownBtn">
+        Facility<span class="chevron">&#x25BC;</span>
+    </a>
+    <ul class="dropdown-content" id="aboutDropdownMenu">
+        <li><a href="auto_facility.html">Automotive</a></li>
+        <li><a href="indust_facility.html">Industrial</a></li>
+        <li><a href="tool_room.html">Tool Room</a></li>
+    </ul>
+</li>
         <li><a href="career.html">Careers</a></li>
         <li><a href="contact.html">Contact</a></li>
                 </ul>
@@ -32,13 +65,11 @@
         <section class="animated-section">
         <div class="container">
             <div class="section-title" style="text-align:center;">
-                <h2 style="color:#e21921; font-size:2rem; margin-bottom:10px;">Our Products &amp; Services</h2>
-                <p>Comprehensive solutions designed to address the unique challenges of automotive and industrial sectors.</p>
+                <h2 style="color:#e21921; font-size:2rem; margin-bottom:10px;">Automotive Products &amp; Services</h2>
+      <p>Comprehensive solutions designed to address the unique challenges of the automotive sector.</p>
             </div><br>
-            <div class="product-filters" style="text-align:center; margin-bottom:30px;">
-                <button class="filter-btn active" data-category="automotive">Automotive</button>
-                <button class="filter-btn" data-category="industrial">Industrial</button><br>
-            
+            </div>
+            </section>
 
             <!-- Automotive Products -->
            <div class="facility-group" data-category="automotive">
@@ -122,41 +153,9 @@ By housing multiple functions in one compact design, door modules help reduce we
 </div>
     </section>
 </div>
-            <!-- Industrial Products -->
-            <div class="facility-group" data-category="industrial" style="display:none;">
-    <section class="animated-section">
-        <div class="product-row">
-            <img src="images/electrical_enclosure.avif" alt="Electrical Enclosure" class="product-img">
-            <div>
-                <h3>Electrical Enclosure</h3>
-                <p style="text-align: justify;">
-                    An electrical enclosure is a protective casing used to house electrical or electronic components such as switches, circuit breakers, terminals, and control panels. Its primary purpose is to safeguard these components from environmental factors like dust, moisture, heat, and mechanical impact, while also preventing accidental contact with live parts, thereby ensuring safety for users and maintenance personnel. Electrical enclosures are made from various materials including mild steel, stainless steel, aluminum, plastic, and fiberglass—each selected based on the environmental conditions and application. For example, stainless steel is preferred in corrosive or hygienic environments like food processing, while polycarbonate or fiberglass is used in outdoor or marine settings due to their non-corrosive nature. These enclosures are rated by standards such as IP (Ingress Protection) or NEMA (National Electrical Manufacturers Association), which indicate the level of protection offered against elements like water and dust. 
-                </p>
-            </div>
-        </div>
-        <div class="product-row">
-            <div>
-                <h3>Server Rack</h3>
-                <p style="text-align: justify;">
-                    A server rack is a structured framework or cabinet used to securely mount, organize, and store servers, networking equipment, and other data center hardware in a compact, vertical format. Typically made of steel or aluminum, server racks are designed to optimize space utilization, improve airflow for cooling, and simplify cable management. They follow standardized dimensions, most commonly the 19-inch rack width, with height measured in rack units (U), where 1U equals 1.75 inches. Server racks come in various types such as open-frame racks for better ventilation, enclosed racks for physical security and dust protection, and wall-mounted racks for smaller setups or limited spaces. They are essential in data centers, server rooms, and IT environments, helping maintain organization, prevent overheating, and facilitate easy access for maintenance.
-                </p>
-            </div>
-            <img src="images/Server_rack.avif" alt="Server Rack" class="product-img">
-        </div>
-        <div class="product-row">
-            <img src="images/Safety_rack.avif" alt="Safety Rack" class="product-img">
-            <div>
-                <h3>Safety Rack</h3>
-                <p style="text-align: justify;">
-A safety rack is a specially designed storage or support structure intended to enhance safety in industrial, warehouse, or manufacturing environments by securely holding materials, tools, or equipment in place. These racks are engineered to prevent accidents such as falls, collapses, or tipping of stored items, thereby protecting both workers and inventory. Constructed from durable materials like steel, safety racks often include features such as reinforced frames, anti-slip surfaces, safety stops, and load limit indicators to ensure stability and reliability under heavy use. In factories and production areas, safety racks are commonly used to store heavy parts, machinery components, or hazardous items in a way that minimizes risk and complies with occupational safety standards.                </p>
-            </div>
-        </div>
-    </section>
-</div>
-</div>
 
             </section>
-            </section>
+            
     <!-- Footer Section -->
     <footer class="footer">
         <div class="footer-bottom" style="text-align: center; padding: 16px 0; color: #888; font-size: 0.98rem;">

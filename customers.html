@@ -331,6 +331,8 @@
                 background-position: 0% 50%;
             }
         }
+
+        
     </style>
 </head>
 <body>
@@ -346,248 +348,84 @@
             <nav class="main-nav" id="main-nav">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="facility.html">Facility</a></li>
+        <li class="dropdown">
+            <a href="company.html#md-section" class="dropbtn" id="aboutDropdownBtn">About<span style="font-size:0.8em;">▼</span></a>
+            <ul class="dropdown-content" id="aboutDropdownMenu">
+                <li><a href="company.html">Company</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="customers.html">Customers</a></li>
+            </ul>
+            </li>
+        <li class="dropdown">
+    <a href="#" class="dropbtn" id="aboutDropdownBtn">
+        Products <span class="chevron">&#x25BC;</span>
+    </a>
+    <ul class="dropdown-content" id="aboutDropdownMenu">
+        <li><a href="automotive.html">Automotive</a></li>
+        <li><a href="indust.html">Industrial Solutions</a></li>
+    </ul>
+</li>
+         <li class="dropdown">
+    <a href="#" class="dropbtn" id="aboutDropdownBtn">
+        Facility<span class="chevron">&#x25BC;</span>
+    </a>
+    <ul class="dropdown-content" id="aboutDropdownMenu">
+        <li><a href="auto_facility.html">Automotive</a></li>
+        <li><a href="indust_facility.html">Industrial</a></li>
+        <li><a href="tool_room.html">Tool Room</a></li>
+    </ul>
+</li>
         <li><a href="career.html">Careers</a></li>
         <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <!-- Mission, Vision & Values section starts here -->
-     <section id="about" class="about section-padding" style="margin-bottom: 50px;"></section>
-            <div class="section-title" >
-                <h2 style="color:#e21921; font-size:2rem; margin-bottom:10px;">Our Mission, Vision &amp; Values</h2>
-                <p class="about-center" style="font-size: 20px;">
-                    The principles that guide our work and define our approach to consultancy.
-                </p>
-            </div>
-            <div class="about-features">
-                <div class="feature-item">
-                    <i class="fa fa-bullseye" style="font-size:48px;color:red"></i>
-                    <div class="feature-text">
-                        <h4>Our Mission</h4>
-                        <p>To empower automotive and industrial businesses with strategic insights and practical solutions that enhance operational efficiency, drive innovation, and create sustainable competitive advantages.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <i class="fa fa-lightbulb" style="font-size:48px;color:red"></i>
-                    <div class="feature-text">
-                        <h4>Our Vision</h4>
-                        <p>To be the global leader in automotive and industrial consultancy, recognized for our innovative approach, technical expertise, and commitment to delivering exceptional value to our clients.</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <i class="fa fa-handshake" style="font-size:48px;color:red"></i>
-                    <div class="feature-text">
-                        <h4>Values</h4>
-                        <p>Excellence in everything we do<br>
-                        Integrity and transparency<br>
-                        Innovation and continuous improvement<br>
-                        Client-centered approach</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Mission, Vision & Values section ends here -->
-        </div>
-        </section>
-    </section>
-    <!-- Timeline Section -->
-    <div class="timeline-section">
-        <div class="section-title">
-            <h2 style="color:#e21921; font-size:2rem; margin-bottom:10px;">History</h2>
-            <p>A brief overview of our milestones and achievements over the years, showcasing our continuous growth and innovation in the automotive industry.</p>
-        </div>
-        
-        <div class="timeline-container">
-            <div class="timeline-line"></div>
-            
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-tools"></i>
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-year">1992</div>
-                    <div class="timeline-title">Started as a Tool Room</div>
-                    <div class="timeline-desc">Humble beginnings in Bengaluru with basic tooling operations</div>
-                </div>
-            </div>
 
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-hammer"></i>
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-year">1997</div>
-                    <div class="timeline-title">Stamping Machines Added</div>
-                    <div class="timeline-desc">Expanded capabilities with advanced stamping technology</div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-cogs"></i>
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-year">2002</div>
-                    <div class="timeline-title">Expanded with Additional Machines</div>
-                    <div class="timeline-desc">Increased production capacity and technological capabilities</div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-industry"></i>
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-year">2005</div>
-                    <div class="timeline-title">Diversified into Industrial Solution</div>
-                    <div class="timeline-desc">Fabrication Products - Broadened service offerings</div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-building"></i>
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-year">2011</div>
-                    <div class="timeline-title">Restructured as Private Ltd</div>
-                    <div class="timeline-desc">Corporate restructuring for enhanced business operations</div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-flask"></i>
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-year">2015</div>
-                    <div class="timeline-title">Added Injection Moulding Machines</div>
-                    <div class="timeline-desc">Enhanced manufacturing with plastic injection capabilities</div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-year">2021</div>
-                    <div class="timeline-title">New Plant in Ranipet</div>
-                    <div class="timeline-desc">Tamil Nadu - Geographic expansion for better market reach</div>
-                </div>
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-icon">
-                    <i class="fas fa-car"></i>
-                </div>
-                <div class="timeline-content">
-                    <div class="timeline-year">2024</div>
-                    <div class="timeline-title">Starting New Automotive Plant</div>
-                    <div class="timeline-desc">Latest expansion into advanced automotive manufacturing</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About Section -->
-    
-        <section class="animated-section">
-        <div class="container">
-            <div class="about-content" style="margin-bottom: 50px;">
-                <div class="about-image animated">
-                    <img src="images/md.avif" alt="PM Techno Facility">
-                </div>
-                <div class="about-text animated delay-1" style="text-align: center;">
-                    <h2 style="color:red; font-size: 30px;">Udaya Suriyan</h2>
-                    <p style="text-align: justify;">
-                        Beginning his journey as a young and motivated tooling engineer, Uday quickly demonstrated an exceptional aptitude for precision, problem-solving, and innovation. With a strong technical foundation and an eye for detail, he immersed himself in the intricacies of manufacturing and engineering operations, gaining hands-on experience that would later become the cornerstone of his entrepreneurial success.
-
-                        <p style="font-size: 1.2rem; text-align: justify; margin-bottom: 18px;">Over the years, Uday’s unwavering dedication and keen business insight have enabled him to transform from a skilled engineer into a visionary entrepreneur. </p>
-                    <p style="font-size: 1.2rem; text-align: justify; margin-bottom: 18px;">His leadership is defined by integrity, discipline, and a deep commitment to continuous improvement. He has built the company on values of quality, trust, and customer satisfaction, constantly pushing boundaries to deliver cutting-edge solutions in the field of automotive components and sheet metal fabrication.
-
-                    </p>
-                </div>
-            </div>
-    <!-- Certificates Section -->
+    <!-- Customers Section -->
+<section id="customer" class="about section-padding" style="margin-bottom: 50px;">              
     <div class="section-title" style="text-align: center; margin-top: 50px;">
         <section class="animated-section">
-        <h2 style="color:#e21921; font-size:2rem; margin-bottom:10px;">Awards</h2>
-        <!-- <p class="about-center">We are certified for quality and excellence in the automotive industry.</p> -->
-    </section>
-</div>
-<div class="carousel-outer">
-    <div class="certificates-carousel" id="carouselTrack">
-        <div class="carousel-card animated-card"><img src="images/cer1.avif" alt="Certificate 1"></div>
-        <div class="carousel-card animated-card"><img src="images/cer2.avif" alt="Certificate 2"></div>
-        <!-- //<div class="carousel-card animated-card"><img src="images/cer3.avif" alt="Certificate 3"></div>  -->
-        <!-- <div class="carousel-card animated-card"><img src="images/cer4.avif" alt="Certificate 4"></div>  -->
-        <div class="carousel-card animated-card"><img src="images/cer5.avif" alt="Certificate 5"></div>
-        <div class="carousel-card animated-card"><img src="images/cer6.avif" alt="Certificate 6"></div>
-        <div class="carousel-card animated-card"><img src="images/awrad1.avif" alt="Certificate 7"></div>
-        <div class="carousel-card animated-card"><img src="images/award3.avif" alt="Certificate 9"></div>
-        <div class="carousel-card animated-card"><img src="images/award4.avif" alt="Certificate 10"></div>
-        <div class="carousel-card animated-card"><img src="images/award5.avif" alt="Certificate 11"></div>
-        <div class="carousel-card animated-card"><img src="images/award6.avif" alt="Certificate 12"></div>
-        <div class="carousel-card animated-card"><img src="images/award7.avif" alt="Certificate 12"></div>
-        <div class="carousel-card animated-card"><img src="images/award8.avif" alt="Certificate 13"></div>
-        <div class="carousel-card animated-card"><img src="images/award9.avif" alt="Certificate 13"></div>
-    </div>
-</div>
-
-            
-
-    
-    
-
-
-    <!-- Our Customers Section -->
-    <div class="section-title" style="text-align: center; margin-top: 60px;">
-         <section class="animated-section">
         <h2 style="color:#e21921; font-size:2rem; margin-bottom:10px;">Our Customers</h2>
         <p class="about-center" style="font-size: 20px;">
             Trusted by leading companies in the automotive and industrial sectors.
         </p>
-    </div>
-
-    <!-- Automotive Customers -->
-     <section class="animated-section">
-    <div class="section-title" style="text-align: center; margin-top: 60px;">
-        <h3 style="color: #2d2c2c; font-size: 1.5rem; text-decoration: underline; text-decoration-color: #dc2626; text-underline-offset: 6px; text-decoration-thickness: 3px;">Automotive </h3>
-    </div>
-    <div class="customers-logos" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-bottom: 40px;">
-        <div class="customer-logo"><img src="images/A1 (1).avif" alt="Automotive Customer 1" style="height: 60px; max-width: 140px; object-fit: contain;"></div>
-        <div class="customer-logo"><img src="images/A2.avif" alt="Automotive Customer 2" style="height: 60px; max-width: 140px; object-fit: contain;"></div>
-        <div class="customer-logo"><img src="images/A3.avif" alt="Automotive Customer 3" style="height: 60px; max-width: 140px; object-fit: contain;"></div>
-        <div class="customer-logo"><img src="images/A4.avif" alt="Automotive Customer 4" style="height: 60px; max-width: 140px; object-fit: contain;"></div>
-        <div class="customer-logo"><img src="images/A6.avif" alt="Automotive Customer 5" style="height: 60px; max-width: 140px; object-fit: contain;"></div>
-        <div class="customer-logo"><img src="images/A7.avif" alt="Automotive Customer 6" style="height: 60px; max-width: 140px; object-fit: contain;"></div>
-        <div class="customer-logo"><img src="images/A8.avif" alt="Automotive Customer 7" style="height: 60px; max-width: 140px; object-fit: contain;"></div>
-        <div class="customer-logo"><img src="images/A9.avif" alt="Automotive Customer 8" style="height: 60px; max-width: 140px; object-fit: contain;"></div>
-    </div>
-    </section>
-
-    <!-- Industrial Customers -->
-     <section class="animated-section">
-    <div class="section-title" style="text-align: center; margin-top: 60px;">
-        <h3 style="color: #2d2c2c; font-size: 1.5rem; text-decoration: underline; text-decoration-color: #dc2626; text-underline-offset: 6px; text-decoration-thickness: 3px;">Industrial </h3>
-    </div>
-    <div class="customers-logos" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-bottom: 60px;">
-        <div class="customer-logo"><img src="images/I1.avif" alt="Industrial Customer 1" style="height: 60px; max-width: 140px; object-fit: contain;"></div>
-        <div class="customer-logo"><img src="images/I2.avif" alt="Industrial Customer 2" style="height: 60px; max-width: 140px; object-fit: contain;"></div>
-        <div class="customer-logo"><img src="images/I3.avif" alt="Industrial Customer 3" style="height: 60px; max-width: 140px; object-fit: contain;"></div>
-        <div class="customer-logo"><img src="images/I4.avif" alt="Industrial Customer 4" style="height: 60px; max-width: 140px; object-fit: contain;"></div>
-        <div class="customer-logo"><img src="images/I5.avif" alt="Industrial Customer 5" style="height: 60px; max-width: 140px; object-fit: contain;"></div>
-        <div class="customer-logo"><img src="images/I6.avif" alt="Industrial Customer 6" style="height: 60px; max-width: 140px; object-fit: contain;"></div>
-        <div class="customer-logo"><img src="images/I7.avif" alt="Industrial Customer 7" style="height: 60px; max-width: 140px; object-fit: contain;"></div>
-        <div class="customer-logo"><img src="images/I8.avif" alt="Industrial Customer 8" style="height: 60px; max-width: 140px; object-fit: contain;"></div> 
-    </div>
     </section>
 </div>
+
+    <!-- Automotive Customers -->
+    <div class="section-title" style="text-align: center; margin-top: 60px;">
+        <h3 style="color: #2d2c2c; font-size: 1.5rem; text-decoration: underline; text-decoration-color: #dc2626; text-underline-offset: 6px; text-decoration-thickness: 3px;">Automotive</h3>
+    </div>
+    <div class="customers-logos" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-bottom: 40px;">
+        <div class="customer-logo"><img src="images/A1 (1).avif" alt="Automotive Customer 1"></div>
+        <div class="customer-logo"><img src="images/A2.avif" alt="Automotive Customer 2"></div>
+        <div class="customer-logo"><img src="images/A3.avif" alt="Automotive Customer 3"></div>
+        <div class="customer-logo"><img src="images/A4.avif" alt="Automotive Customer 4"></div>
+        <div class="customer-logo"><img src="images/A6.avif" alt="Automotive Customer 5"></div>
+        <div class="customer-logo"><img src="images/A7.avif" alt="Automotive Customer 6"></div>
+        <div class="customer-logo"><img src="images/A8.avif" alt="Automotive Customer 7"></div>
+        <div class="customer-logo"><img src="images/A9.avif" alt="Automotive Customer 8"></div>
+        <div class="customer-logo"><img src="images/RealTruck_company_logo.avif" alt="Automotive Customer 9"></div>
+    </div>
+
+    <!-- Industrial Customers -->
+    <div class="section-title" style="text-align: center; margin-top: 60px;">
+        <h3 style="color: #2d2c2c; font-size: 1.5rem; text-decoration: underline; text-decoration-color: #dc2626; text-underline-offset: 6px; text-decoration-thickness: 3px;">Industrial</h3>
+    </div>
+    <div class="customers-logos" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-bottom: 60px;">
+        <div class="customer-logo"><img src="images/I1.avif" alt="Industrial Customer 1"></div>
+        <div class="customer-logo"><img src="images/I2.avif" alt="Industrial Customer 2"></div>
+        <div class="customer-logo"><img src="images/I3.avif" alt="Industrial Customer 3"></div>
+        <div class="customer-logo"><img src="images/I4.avif" alt="Industrial Customer 4"></div>
+        <div class="customer-logo"><img src="images/I5.avif" alt="Industrial Customer 5"></div>
+        <div class="customer-logo"><img src="images/I6.avif" alt="Industrial Customer 6"></div>
+        <div class="customer-logo"><img src="images/I7.avif" alt="Industrial Customer 7"></div>
+        <div class="customer-logo"><img src="images/I8.avif" alt="Industrial Customer 8"></div>
+    </div>
 </section>
-</section>
+
 
         <!-- Footer Section -->
     <footer class="footer">
@@ -708,6 +546,24 @@ document.addEventListener("DOMContentLoaded", function() {
         if (currentIndex > cardCount - cardsPerView) currentIndex = 0;
         slideTo(currentIndex);
     }, 4000); // 10 seconds
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const dropdown = document.querySelector('.main-nav .dropdown');
+    const btn = document.getElementById('aboutDropdownBtn');
+    if (dropdown && btn) {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            dropdown.classList.toggle('open');
+        });
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!dropdown.contains(e.target)) {
+                dropdown.classList.remove('open');
+            }
+        });
+    }
 });
 </script>
     <script src="js/main.js"></script>

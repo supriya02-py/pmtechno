@@ -31,9 +31,42 @@
             <nav class="main-nav" id="main-nav">
     <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="facility.html">Facility</a></li>
+        <li class="dropdown">
+            <a href="company.html#md-section" class="dropbtn" id="aboutDropdownBtn">About<span style="font-size:0.8em;">▼</span></a>
+            <ul class="dropdown-content" id="aboutDropdownMenu">
+                <li>
+                    <a href="company.html">Company</a>
+                </li>
+                <li>
+                    <a href="history.html">History</a>
+                </li>
+                <li>
+                    <a href="awards.html">Awards</a>
+                </li>
+                <li>
+                    <a href="customers.html">Customers</a>
+                </li>
+            </ul>
+            </li>
+        <li class="dropdown">
+    <a href="#" class="dropbtn" id="aboutDropdownBtn">
+        Products <span class="chevron">&#x25BC;</span>
+    </a>
+    <ul class="dropdown-content" id="aboutDropdownMenu">
+        <li><a href="automotive.html">Automotive</a></li>
+        <li><a href="indust.html">Industrial Solutions</a></li>
+    </ul>
+</li>
+        <li class="dropdown">
+    <a href="#" class="dropbtn" id="aboutDropdownBtn">
+        Facility<span class="chevron">&#x25BC;</span>
+    </a>
+    <ul class="dropdown-content" id="aboutDropdownMenu">
+        <li><a href="auto_facility.html">Automotive</a></li>
+        <li><a href="indust_facility.html">Industrial</a></li>
+        <li><a href="tool_room.html">Tool Room</a></li>
+    </ul>
+</li>
         <li><a href="career.html">Careers</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -44,7 +77,7 @@
     <div class="container">
         <div class="hero-content">
             <h1>Leading <span>Automotive</span> Solutions For The Future</h1>
-            <p>PM Techno Private Limited is among India's premier automotive technology and solutions companies to cater to modern requirements.</p>
+            <!-- <p>PM Techno Private Limited is among India's premier automotive technology and solutions companies to cater to modern requirements.</p> -->
             <div class="hero-btns">
                 <a href="about.html" class="btn">Learn More</a>
                 <a href="contact.html" class="btn btn-outline">Contact Us</a>
@@ -55,9 +88,11 @@
 
     <div class="container" style="padding: 60px 20px; font-size: 30px;">
         <section class="animated-section">
-    <div class="section-title" style="text-align: center;">
+                        <p style="text-align: center;">PM Techno Private Limited is among India's premier automotive technology and solutions companies to cater to modern requirements.</p>
+
+    <!-- <div class="section-title" style="text-align: center;">
                 <h2>Get to know us</h2>
-                <p class="about-center">
+                <p style="font-size: 1.2rem; text-align: justify; margin-bottom: 18px;">
                Founded in 1992 in Bengaluru, our company began with a clear vision and a commitment to engineering excellence. From modest beginnings, we have grown steadily to become a trusted name in the automotive component and sheet metal fabrication industry, serving both OEMs (Original Equipment Manufacturers) and Tier 1 suppliers.
 
 <p style="font-size: 1.2rem; text-align: justify; margin-bottom: 18px;">With over three decades of industry experience, we pride ourselves on delivering technologically advanced solutions that meet the evolving demands of our esteemed customers. Our success has been driven by our core values of quality, innovation, integrity, and customer satisfaction.</p>
@@ -67,7 +102,7 @@
                  <div class="hero-btns animated delay-2" style="display: flex; justify-content: center; margin-top: 24px;">
                     <a href="about.html" class="btn">Learn More</a>
                 </div>
-            </div>
+            </div> -->
                 </section>
             </div>
      
@@ -131,7 +166,7 @@
             </div>
             <div class="why-choose-card">
                 <span class="why-icon" style="font-size:2rem; color:#e21921;">⏱️</span>
-                <h4>Timely Delivery</h4>
+                <h4>Timely Delivery</h4> 
                 <p>Our streamlined processes and dedicated logistics ensure your orders arrive on time, every time.</p>
             </div>
             <div class="why-choose-card">

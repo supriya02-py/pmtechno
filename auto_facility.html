@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Facilities | PM Techno Private Ltd</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="PM Techno Logo"></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="company.html#md-section" class="dropbtn" id="aboutDropdownBtn">About<span style="font-size:0.8em;">▼</span></a>
+            <ul class="dropdown-content" id="aboutDropdownMenu">
+                <li>
+                    <a href="company.html">Company</a>
+                </li>
+                <li>
+                    <a href="history.html">History</a>
+                </li>
+                <li>
+                    <a href="awards.html">Awards</a>
+                </li>
+                <li>
+                    <a href="customers.html">Customers</a>
+                </li>
+            </ul>
+            </li>
+        <li class="dropdown">
+    <a href="#" class="dropbtn" id="aboutDropdownBtn">
+        Products <span class="chevron">&#x25BC;</span>
+    </a>
+    <ul class="dropdown-content" id="aboutDropdownMenu">
+        <li><a href="automotive.html">Automotive</a></li>
+        <li><a href="indust.html">Industrial Solutions</a></li>
+    </ul>
+</li>
+         <li class="dropdown">
+    <a href="#" class="dropbtn" id="aboutDropdownBtn">
+        Facility<span class="chevron">&#x25BC;</span>
+    </a>
+    <ul class="dropdown-content" id="aboutDropdownMenu">
+        <li><a href="auto_facility.html">Automotive</a></li>
+        <li><a href="indust_facility.html">Industrial</a></li>
+        <li><a href="tool_room.html">Tool Room</a></li>
+    </ul>
+</li>
+        <li><a href="career.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Automotive Facility Section -->
+<section id="automotive-facility" class="facility section-padding" style="margin-bottom: 50px;">
+    <div class="container">
+        <div class="section-title" style="text-align:center; margin-bottom: 50px;">
+            <h2 style="color:#e21921; font-size:2rem; margin-bottom:10px;">Automotive Facility</h2>
+            <p>Explore our dedicated automotive production area equipped for metal processing, assembly, and inspection.</p>
+        </div>
+        <section class="animated-section">
+            <div class="facility-row">
+                <img src="images/area_auto1.jpg" alt="Area" class="facility-img">
+                <div>
+                    <h3>Area:</h3>
+                    <p>
+                        The automotive division of PMTechno is built across a dedicated space of approximately 80,000 sq. ft., specially designed to support the development and production of automotive components. The facility is segmented into areas for sheet metal processing, assembly, plastic injection molding, and storage. The well-organized layout ensures a logical flow of operations — from raw material intake to finished product output — minimizing handling time and optimizing productivity.
+                    </p>
+                </div>
+            </div>
+            <div class="facility-row">
+                <div>
+                    <h3>Power Press:</h3>
+                    <p>
+                        This unit is equipped with mechanical and hydraulic power presses ranging from 10 to 250 tons. These machines are used for stamping, punching, bending, and pressing sheet metal parts that are critical to vehicle manufacturing. Common components produced include body parts, chassis supports, brackets, and structural frames. The automotive power press area is designed for both low-volume prototyping and high-volume production.
+                    </p>
+                </div>
+                <img src="images/autopp.avif" alt="Power Press" class="facility-img">
+            </div>
+            <div class="facility-row">
+                <img src="images/CMM.avif" alt="Area" class="facility-img">
+                <div>
+                    <h3>Quality Control:</h3>
+                    <p>
+                        The automotive quality control section uses advanced equipment like coordinate measuring machines (CMM), vernier calipers, micrometers, dial gauges, surface finish testers, and hardness testers to ensure all manufactured parts meet safety and industry standards. Each part undergoes multiple inspection checkpoints, including dimensional accuracy and mechanical strength tests. A Pre-Delivery Inspection (PDI) setup is used to simulate real-world performance before shipping to clients.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+    
+        <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-bottom" style="text-align: center; padding: 16px 0; color: #888; font-size: 0.98rem;">
+            &copy; 2025 PM Techno. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+        <script>
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('active');
+                } else {
+                    backToTop.classList.remove('active');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        // Product filter buttons
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const facilityGroups = document.querySelectorAll('.facility-group');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                const category = this.getAttribute('data-category');
+                facilityGroups.forEach(group => {
+                    if (group.getAttribute('data-category') === category) {
+                        group.style.display = '';
+                    } else {
+                        group.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const animatedEls = document.querySelectorAll('.animated-section, .product-card');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    animatedEls.forEach(el => observer.observe(el));
+});
+</script>
+</body>
+</html>
+

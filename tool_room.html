@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Facilities | PM Techno Private Ltd</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="PM Techno Logo"></a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+            <nav class="main-nav" id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="company.html#md-section" class="dropbtn" id="aboutDropdownBtn">About<span style="font-size:0.8em;">▼</span></a>
+            <ul class="dropdown-content" id="aboutDropdownMenu">
+                <li>
+                    <a href="company.html">Company</a>
+                </li>
+                <li>
+                    <a href="history.html">History</a>
+                </li>
+                <li>
+                    <a href="awards.html">Awards</a>
+                </li>
+                <li>
+                    <a href="customers.html">Customers</a>
+                </li>
+            </ul>
+            </li>
+        <li class="dropdown">
+    <a href="#" class="dropbtn" id="aboutDropdownBtn">
+        Products <span class="chevron">&#x25BC;</span>
+    </a>
+    <ul class="dropdown-content" id="aboutDropdownMenu">
+        <li><a href="automotive.html">Automotive</a></li>
+        <li><a href="indust.html">Industrial Solutions</a></li>
+    </ul>
+</li>
+         <li class="dropdown">
+    <a href="" class="dropbtn" id="aboutDropdownBtn">
+        Facility<span class="chevron">&#x25BC;</span>
+    </a>
+    <ul class="dropdown-content" id="aboutDropdownMenu">
+        <li><a href="auto_facility.html">Automotive</a></li>
+        <li><a href="indust_facility.html">Industrial</a></li>
+        <li><a href="tool_room.html">Tool Room</a></li>
+    </ul>
+</li>
+        <li><a href="career.html">Careers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   <!-- Tool Room Facility Section -->
+<section id="tool-room-facility" class="facility section-padding" style="margin-bottom: 50px;">
+    <div class="container">
+        <div class="section-title" style="text-align:center; margin-bottom: 50px;">
+            <h2 style="color:#e21921; font-size:2rem; margin-bottom:10px;">Tool Room Facility</h2>
+            <p>Precision machining and tooling supported by high-performance machines in a controlled environment.</p>
+        </div>
+        <section class="animated-section">
+            <div class="facility-row">
+                <img src="images/Tool-Room-9.avif" alt="Tool Room" class="facility-img">
+                <div>
+                    <h3>Area:</h3>
+                    <p>
+                        The tool room occupies about 20,000 sq.ft., organized into CNC machining centers, wire cutting EDM, conventional machines, tool assembly zones, and tool storage racks. This controlled environment supports fine machining, tool designing, and maintenance tasks. The area layout ensures low vibration, high stability, and dust control to maintain tool precision and cleanliness.
+                    </p>
+                </div>
+            </div>
+            <div class="facility-row">
+                <div>
+                    <h3>Vertical Machining Centres</h3>
+                    <p>
+                        Vertical Machining Centres play a vital role in the precision manufacturing of automotive components. These advanced machines are designed for high-speed, accurate operations, allowing us to produce complex parts with tight tolerances and exceptional consistency. By utilizing Vertical Machining Centres, we ensure efficient production processes, reduced lead times, and high-quality output that meets the rigorous standards of the automotive industry. Their reliability and performance contribute significantly to maintaining the excellence of our products.
+                    </p>
+                </div>
+                <img src="images/vmc.avif" alt="Vertical Machining" class="facility-img">
+            </div>
+            <div class="facility-row">
+                <img src="images/Wire-EDM-Cutting.avif" alt="Wire EDM" class="facility-img">
+                <div>
+                    <h3>Wire Cutting EDM</h3>
+                    <p>
+                        Tool accuracy is vital, and our quality team uses profile projectors, tool presetters, gauge blocks, coordinate measuring machines (CMM), and surface roughness testers to verify every tool's precision. Tool trials are documented, and adjustments are made until zero deviation is achieved. Regular maintenance logs and inspection certificates ensure long-term reliability.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+    
+        <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-bottom" style="text-align: center; padding: 16px 0; color: #888; font-size: 0.98rem;">
+            &copy; 2025 PM Techno. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+        <script>
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        if (backToTop) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    backToTop.classList.add('active');
+                } else {
+                    backToTop.classList.remove('active');
+                }
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        // Product filter buttons
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const facilityGroups = document.querySelectorAll('.facility-group');
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                const category = this.getAttribute('data-category');
+                facilityGroups.forEach(group => {
+                    if (group.getAttribute('data-category') === category) {
+                        group.style.display = '';
+                    } else {
+                        group.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+    <script src="js/main.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const animatedEls = document.querySelectorAll('.animated-section, .product-card');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.15 });
+
+    animatedEls.forEach(el => observer.observe(el));
+});
+</script>
+</body>
+</html>
+
