@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset 
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://supriya02-py.github.io/pmtechno/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://supriya02-py.github.io/pmtechno/about.html</loc>
+  </url>
+
+  <url>
+    <loc>https://supriya02-py.github.io/pmtechno/products.html</loc>
+  </url>
+
+  <url>
+    <loc>https://supriya02-py.github.io/pmtechno/facility.html</loc>
+  </url>
+
+  <url>
+    <loc>https://supriya02-py.github.io/pmtechno/careers.html</loc>
+  </url>
+
+  <url>
+    <loc>https://supriya02-py.github.io/pmtechno/contact.html</loc>
+  </url>
+
+</urlset>
